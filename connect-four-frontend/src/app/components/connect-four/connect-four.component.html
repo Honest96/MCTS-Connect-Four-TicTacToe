@@ -1,0 +1,17 @@
+<h1>Connect Four</h1>
+<button class="start-btn" (click)="startGame()">Start New Game</button>
+
+<div class="board">
+  <div class="row" *ngFor="let row of board; let rowIndex = index">
+    <div 
+      *ngFor="let cell of row; let colIndex = index"
+      class="cell"
+      [ngClass]="{'player1': cell === 1, 'player2': cell === 2}"
+      (click)="dropPiece(colIndex)">
+    </div>
+  </div>
+</div>
+
+<div class="status">
+  <p>{{ statusMessage }}</p>
+</div>
