@@ -1,0 +1,33 @@
+<h1>Tic Tac Toe</h1>
+
+<div class="game-buttons">
+  <button class="start-btn" (click)="startGame()">Start New Game</button>
+</div>
+
+<br />
+
+<div *ngIf="mode === 'human'" class="tic-tac-toe">
+  <div class="board">
+    <div *ngFor="let row of board; let rowIndex = index">
+      <div
+        *ngFor="let cell of row; let colIndex = index"
+        class="cell"
+        (click)="makeMove(rowIndex, colIndex)"
+      >
+        {{ cell === 1 ? "X" : cell === 2 ? "O" : '' }}
+      </div>
+    </div>
+  </div>
+  <div class="status">
+    <p>{{ statusMessage }}</p>
+  </div>
+</div>
+
+<div *ngIf="mode === 'random'" class="simulation-results">
+  <p>{{ statusMessage }}</p>
+  <p *ngIf="simResults">
+    MCTS Wins: {{ simResults.mctsWins }},
+    Random Wins: {{ simResults.randomWins }},
+    Draws: {{ simResults.draws }}
+  </p>
+</div>

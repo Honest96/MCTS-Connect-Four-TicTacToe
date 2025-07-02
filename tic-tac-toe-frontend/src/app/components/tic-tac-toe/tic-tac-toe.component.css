@@ -1,0 +1,79 @@
+.game-container {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(0, 128, 255);
+  }
+  
+  .status-message {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .cell {
+    width: 80px;
+    height: 80px;
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cell:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .game-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .start-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 15px;
+    border-radius: 30px;
+  }
+  
+  .start-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .sim-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #f35221;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 30px
+  }
+  
+  .sim-btn:hover {
+    background-color: #6a0909;
+  }
