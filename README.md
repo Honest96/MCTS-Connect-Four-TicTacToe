@@ -43,8 +43,7 @@ Intermediate: some draws
 Expert: consistent draws
 
 # Thesis Report
-For full details, algorithm breakdown and implementation insights, read the full thesis: (./Thesis-Report.pdf)
-
+For full details, algorithm breakdown and implementation insights, read the full thesis: [Thesis Report](./Thesis-Report.pdf)
 # Author
 Honest Ndlovu
 B.Sc (Hons) Computer Science & Softwar Engineering
